@@ -10,7 +10,7 @@ Jdbc의 단점 → 이를 해결하기 위한 SQL Mapper → ORM
 
 ### Jdbc (Java DataBase Connectivity)
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80089860/167233272-166e8064-a9b3-41a5-b6ae-50b2f63f87bb.png)
 
 자바 애플리케이션에서 DBMS의 종류에 상관 없이, 하나의 JDBC API를 이용하여 DB작업을
 
@@ -18,7 +18,7 @@ Jdbc의 단점 → 이를 해결하기 위한 SQL Mapper → ORM
 
 각각의 DBMS (Oracle, MySQL 등)은 이를 구현한 JDBC 드라이버를 제공한다
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80089860/167233274-18ed657d-e03a-4ba0-9262-688168e137c2.png)
 
 ### JDBC을 이용하여 영속성을 유지함에 있어서 단점이 있다
 
@@ -35,7 +35,7 @@ Jdbc의 단점 → 이를 해결하기 위한 SQL Mapper → ORM
 1. **SQL Mapper** 
     - 객체와 sql 쿼리를 Mapping 시켜 데이터를 객체화 시킨다
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80089860/167233278-2420b6e2-fe81-41e1-b28c-b445f3bdaa98.png)
 
 - **JDBC Template**
     - 쿼리 수행결과와 객체의 필드를 Mapping & RowMapper 재활용
@@ -50,8 +50,7 @@ Jdbc의 단점 → 이를 해결하기 위한 SQL Mapper → ORM
 - 복잡한 쿼리나 다이나믹하게 변경되는 쿼리 작성이 쉽다
 - DAO로부터 sql문을 분리하여 코드의 간결성 및 유지보수성 향상
     
-    ![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%203.png)
-    
+![Untitled 3](https://user-images.githubusercontent.com/80089860/167233281-65b164f8-a805-4ba1-95ae-c08b9f2bf84a.png) 
 
 **Persist Framework인 SQL Mapper를 통해 많은 편리함을 느낄 수 있었지만,**
 
@@ -62,13 +61,13 @@ Jdbc의 단점 → 이를 해결하기 위한 SQL Mapper → ORM
     2. 테이블 필드가 변경될 시 이와 관련된 모든 DAO의 SQL문, 객체의 필드 등을 수정해야 한다
     3. 코드상으로 sql과 jdbc api를 분리했다 하더라도, 논리적으로 강한 의존성을 가지고 있다
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/80089860/167233285-8b54d432-fa1f-4b52-bfa3-9b5d85ddf767.png)
 
 1. **ORM(Object Relational Mapping)**
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/80089860/167233290-7a553351-6d9c-4690-9787-7508f938dd6d.png)
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/80089860/167233292-192d2bfb-dc58-4f62-a412-367661e4494b.png)
 
 ORM의 대표적인 예로는 JPA가 있다
 
@@ -90,20 +89,20 @@ ORM Framwork는 하이버네이트, 이클립스 링크 등 위의 세 가지가
 
 ### 패러다임 불일치
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/80089860/167233298-2c7f89d4-bb8f-48cf-9740-0f24b388ca69.png)
 
 상속이라는 개념이 없기 때문에, 아래와 같이 번거로움이 생긴다
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/80089860/167233300-c068b113-a1a4-47f1-ae89-85507fff1180.png)
 
 ### JPA가 번거로움을 해결해준다
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/80089860/167233307-8b638340-01df-4728-8527-492489368929.png)
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/80089860/167233308-f21b13e9-6459-4cef-9e74-f01fb79ba7b4.png)
 
 ### 결론
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%2011.png)
+![Untitled 11](https://user-images.githubusercontent.com/80089860/167233314-1d71af23-f8a6-4d3b-a9c3-98b96cae89ce.png)
 
-![Untitled](ORM%20vs%20SQL%20Mapper%20vs%20JDBC%20bd53279fe03e4f63aebb3e3deb2248a6/Untitled%2012.png)
+![Untitled 12](https://user-images.githubusercontent.com/80089860/167233315-be0ff50f-244c-465c-9ccb-71fe51565676.png)
