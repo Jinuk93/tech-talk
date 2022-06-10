@@ -4,5 +4,4 @@
 
 ## ***Table Of Contents***
 
-- [ORM vs SQL Mapper vs JDBC](https://github.com/Jinuk93/tech-talk/blob/main/docs/ORM%20vs%20SQL%20Mapper%20vs%20JDBC.md)
 - [동기식과 비동기식 차이](https://github.com/Jinuk93/tech-talk/blob/main/docs/%EB%8F%99%EA%B8%B0%EC%8B%9D%EA%B3%BC%20%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D%20%EC%B0%A8%EC%9D%B4.md)
